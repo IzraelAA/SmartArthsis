@@ -27,9 +27,9 @@ public class SplashVideo extends Activity {
         carouselView = findViewById(R.id.carouselView);
         btn_next = findViewById(R.id.btn_next);
 
-        imagesSplash.add(R.drawable.splash1);
-        imagesSplash.add(R.drawable.splash2);
-        imagesSplash.add(R.drawable.splash3);
+        imagesSplash.add(R.drawable.splashscreen);
+        imagesSplash.add(R.drawable.splashscreen2);
+        imagesSplash.add(R.drawable.splashscreen3);
 
         carouselView.setPageCount(imagesSplash.size());
         carouselView.setImageListener(imageListener);
