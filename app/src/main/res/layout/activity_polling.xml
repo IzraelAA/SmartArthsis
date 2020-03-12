@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flege.gumukrejo.main.PollingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:titleTextColor="#FFF"
+    app:title="Poling"
+    app:subtitle="Pemilihan RT 01 RW 02"
+    app:subtitleTextColor="#FFF"
+    android:background="#3297E2"/>
+        <TextView
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomer 1"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panca Adnan Andrian"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_height="200dp"
+        android:src="@drawable/potopropil"/>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pilih1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:text="pilih"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_rounded"/>
+            <Button
+                android:id="@+id/profil1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_rounded"/>
+        </LinearLayout>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nomer 2"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izrael Adnan Asegaf"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_height="200dp"
+        android:src="@drawable/potopropil"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pilih2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:text="pilih"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_rounded"/>
+            <Button
+                android:id="@+id/profil12"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_rounded"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

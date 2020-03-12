@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background_main"
+    tools:context="com.flege.gumukrejo.TopUpActivity">
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/titleTopUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pilih_pembayaran"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        app:layout_constraintTop_toBottomOf="@+id/titleTopUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/bank_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_button_topup"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="@string/bank_transfer"
+            android:buttonTint="@color/black"
+            android:background="@drawable/radio_button_topup"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/cash"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_button_topup"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="@string/cash"
+            android:buttonTint="@color/black"
+            android:background="@drawable/radio_button_topup"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/virtual_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_button_topup"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="@string/virtual_account"
+            android:buttonTint="@color/black"
+            android:background="@drawable/radio_button_topup"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lanjutkan"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

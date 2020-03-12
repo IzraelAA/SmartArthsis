@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".authentication.RegisterActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_main"
+        tools:context=".authentication.RegisterActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@null"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:id="@+id/titleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/register"
+            app:titleTextColor="@color/white"
+            android:fontFamily="monospace"
+            app:subtitle="Mohon Isi Data Dengan Tepat"
+            app:subtitleTextColor="@color/white"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/titleRegister"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/nik"
+            android:theme="@style/TextInputAuth"
+            android:background="@null"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nik">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNik"
+                android:drawableStart="@drawable/ic_assignment_ind_black_24dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/nik"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nama"
+            android:theme="@style/TextInputAuth"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nama">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNama"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/nama"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/jenis_kelamin"
+            android:theme="@style/TextInputAuth"
+            android:background="@null"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            app:hintTextColor="@color/white"
+            app:counterMaxLength="15"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/white"
+            android:layout_height="wrap_content"
+            android:hint="@string/jenis_kelamin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_wc_black_24dp"
+                android:textColor="@color/white"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/jenis_kelamin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/noHandphone"
+            android:theme="@style/TextInputAuth"
+            android:background="@null"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:drawablePadding="5dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nohandphone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNoHandphone"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+                android:drawableStart="@drawable/ic_contact_phone_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:drawablePadding="5dp"
+                android:inputType="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/noHandphone"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            android:theme="@style/TextInputAuth"
+            android:background="@null"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content"
+            android:hint="@string/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassword"
+                android:textColor="@color/white"
+
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/confirmPassword"
+            android:theme="@style/TextInputAuth"
+            android:background="@null"
+            app:hintTextColor="@color/white"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputConfirmPassword"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+
+                android:drawablePadding="5dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded" />
+
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+                <TextView
+
+                    android:id="@+id/text_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/text_back"
+                    android:textColor="#0676D5" />
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login2"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

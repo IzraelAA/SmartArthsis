@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15sp"
+    tools:context=".authentication.KonfirmasiPendaftaranActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no_telp"
+        android:theme="@style/TextInputAuth"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nohandphone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNoHandphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/no_telp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/kode"
+        android:theme="@style/TextInputAuth"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/kode">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputKode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_below="@+id/kode"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/btnKonfirmasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/konfirmasi"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded" />
+
+</RelativeLayout>

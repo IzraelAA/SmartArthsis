@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="25dp"
+        android:paddingHorizontal="6dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/no_telp"
+        android:theme="@style/TextInputAuth"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/btn_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nohandphone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNoTelp"
+            android:layout_width="match_parent"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_contact_phone_black_24dp"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/no_telp"
+        android:layout_marginHorizontal="25dp"
+        android:paddingHorizontal="6dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        android:theme="@style/TextInputAuth"
+        android:background="@drawable/btn_rounded"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:hintTextColor="@color/white"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lupaPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textAlignment="textEnd"
+        android:text="@string/forgotPassword"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/lupaPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lupaKonfirmasiPendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textAlignment="textEnd"
+        android:text="@string/konfirmasi_penndaftaran"/>
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/lupaKonfirmasiPendaftaran"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/text_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:text="@string/text_register"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@color/btnLogin"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

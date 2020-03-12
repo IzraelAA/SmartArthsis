@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.flege.gumukrejo.feature.JenisKelamin">
+    <TextView
+        android:id="@+id/male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:text="Laki-laki"/>
+    <View
+        android:layout_below="@+id/male"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+    <TextView
+        android:id="@+id/female"
+        android:layout_below="@+id/male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:text="Perempuan"/>
+
+</RelativeLayout>

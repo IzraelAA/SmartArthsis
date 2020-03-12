@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flege.gumukrejo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2_landscape"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo2_landscape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.ProfilePolingActivity"
+            android:theme="@style/NoActionBar" ></activity>
+        <activity android:name=".main.PollingActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".authentication.KonfirmasiPendaftaranActivity"
+            android:theme="@style/DialogCustom" />
+        <activity android:name=".TopUpResponseActivity" />
+        <activity
+            android:name=".feature.JenisKelamin"
+            android:theme="@style/DialogCustom" />
+        <activity android:name=".RiwayatTransaksiActivity" />
+        <activity
+            android:name=".main.ChangePasswordActivity"
+            android:theme="@style/DialogCustom" />
+        <activity android:name=".TopUpActivity" />
+        <activity android:name=".InvoiceActivity" />
+        <activity android:name=".SmartArthesisActivity" />
+        <activity
+            android:name=".splash.SplashScreen"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splash.SplashVideo"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".main.MainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".authentication.RegisterActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".authentication.ForgotPasswordActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".authentication.RegisterSuccessActivity"
+            android:theme="@style/NoActionBar" />
+    </application>
+
+</manifest>

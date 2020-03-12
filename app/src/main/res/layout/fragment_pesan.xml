@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0ECF0F0"
+    tools:context="com.flege.gumukrejo.main.PesanFragment">
+
+<!--    <ListView-->
+<!--        android:id="@+id/list_pesan"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Pesan"
+            app:subtitle="online"
+            android:background="#FFF"
+            app:subtitleTextColor="#000"
+            app:titleTextColor="#000"
+            />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:visibility="gone"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rightmassage"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:text="Helo"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:padding="8dp"
+
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:id="@+id/imageprofilchat"
+                android:layout_height="40dp"
+                android:src="@drawable/iconadmin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showmassage"
+                android:background="@drawable/leftmassage"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:padding="6dp"
+                android:textColor="#000"
+                android:text="Selamat datang di smart arthsis ada yang bisa saya bantu??"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageprofilchat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textStatus"
+                android:visibility="gone"
+                android:layout_below="@id/showmassage"/>
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:visibility="gone"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rightmassage"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:text="Saya membeli air tapi air nya masih belum keluar"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:padding="8dp"
+
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:id="@+id/imageprofilchat1"
+                android:layout_height="40dp"
+                android:src="@drawable/iconadmin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftmassage"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:padding="6dp"
+                android:textColor="#000"
+                android:text="Mohon maaf atas ketidak nyamanannya saya akan mendata ulang"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageprofilchat1"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+  </RelativeLayout>

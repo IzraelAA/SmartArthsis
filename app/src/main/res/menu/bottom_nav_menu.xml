@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_beranda"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_beranda" />
+
+    <item
+        android:id="@+id/navigation_pesan"
+        android:icon="@drawable/icon_material_message"
+        android:title="@string/title_pesan" />
+
+    <item
+        android:id="@+id/navigation_bantuan"
+        android:icon="@drawable/icon_matertial_bantuan"
+        android:title="@string/title_bantuan" />
+
+    <item
+        android:id="@+id/navigation_akun"
+        android:icon="@drawable/icon_material_account_circle"
+        android:title="@string/title_akun" />
+
+</menu>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".SmartArthesisActivity">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/titleSaldoAnda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saldo_anda"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/titleSaldoAnda"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/containersaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/logo_linkaja"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:src="@drawable/gallon" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:id="@+id/saldo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:id="@+id/topup"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/danger"
+            android:background="@color/white"
+            android:text="@string/topupplus"/>
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/containersaldo"
+        android:layout_marginTop="56dp"
+        android:id="@+id/jml_pembelian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jml_pembelian"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/jml_pembelian"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnliterair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/liter_air"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_rounded_white" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/btnliterair"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnRupiah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rupiah"
+        android:visibility="gone"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_rounded_white" />
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/btnRupiah"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/container_rupiah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/containerkasir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_rounded_white" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rupiah_sumbol"
+                android:textSize="21sp"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="@string/rupiah_sumbol"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/inputNominal"
+                android:inputType="number"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/containerkasir">
+            <ImageView
+                android:id="@+id/icon_water"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:src="@drawable/icon_open_droplet" />
+            <TextView
+                android:id="@+id/jumlah_liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/icon_water"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+            <TextView
+                android:id="@+id/satuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/jumlah_liter"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/liter"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/btnRupiah"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/container_liter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/containerkasir2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_rounded_white" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:id="@+id/inputLiter"
+                android:inputType="numberDecimal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@null"
+                android:layout_weight=".25"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/liter_sumbol"
+                android:textSize="21sp"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="@string/liter"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_below="@+id/containerkasir2">
+            <ImageView
+                android:id="@+id/icon_rupiah"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:src="@drawable/icon_awesome_money_check" />
+            <TextView
+                android:id="@+id/jumlah_rupiah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/icon_rupiah"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="72dp"
+        android:id="@+id/btnLanjutkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lanjutkan"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

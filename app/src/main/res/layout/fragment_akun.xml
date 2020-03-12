@@ -1,0 +1,190 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flege.gumukrejo.main.AkunFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/icon_user_id"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_user_id" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_toEndOf="@+id/icon_user_id"
+                android:hint="@string/user_id">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputUserID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_id">
+            <ImageView
+                android:id="@+id/icon_nik"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_user_id" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_toEndOf="@+id/icon_nik"
+                android:hint="@string/nik">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputNIK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nik">
+            <ImageView
+                android:id="@+id/icon_nama"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_user_circle" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_toEndOf="@+id/icon_nama"
+                android:hint="@string/nama">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama">
+            <ImageView
+                android:id="@+id/icon_no_telp"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_telephone" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_toEndOf="@+id/icon_no_telp"
+                android:hint="@string/no_telp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputNoTelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="phone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/no_telp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginEnd="12dp"
+                android:textSize="23sp"
+                android:text="@string/changePassword" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/icon_play_black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/riwayat_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/change_password">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginEnd="12dp"
+                android:textSize="23sp"
+                android:text="@string/transaction_history" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/icon_play_black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_below="@+id/riwayat_transaksi"
+            android:layout_alignEnd="@+id/riwayat_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/danger"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:textSize="23sp"
+            android:text="@string/logout" />
+    </RelativeLayout>
+
+</ScrollView>
