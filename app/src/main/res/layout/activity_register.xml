@@ -46,6 +46,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inputNik"
+                android:drawablePadding="5dp"
                 android:drawableStart="@drawable/ic_assignment_ind_black_24dp"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"

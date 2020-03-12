@@ -13,28 +13,24 @@
             android:id="@+id/user_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/icon_user_id"
-                android:layout_width="47dp"
-                android:layout_height="47dp"
-                android:padding="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/icon_user_id" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_toEndOf="@+id/icon_user_id"
-                android:hint="@string/user_id">
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:hint="@string/user_id"
+                android:padding="5dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputUserID"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/useridbirupanca"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
-                    android:inputType="text"/>
+                    android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
@@ -44,23 +40,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/user_id">
-            <ImageView
-                android:id="@+id/icon_nik"
-                android:layout_width="47dp"
-                android:layout_height="47dp"
-                android:padding="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/icon_user_id" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:layout_toEndOf="@+id/icon_nik"
                 android:hint="@string/nik">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputNIK"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_assignmentblue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
@@ -75,24 +64,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/nik">
-            <ImageView
-                android:id="@+id/icon_nama"
-                android:layout_width="47dp"
-                android:layout_height="47dp"
-                android:padding="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/icon_user_circle" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:layout_toEndOf="@+id/icon_nama"
                 android:hint="@string/nama">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputNama"
+                    android:drawablePadding="5dp"
                     android:layout_width="match_parent"
+                    android:drawableStart="@drawable/ic_accountnama"
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
@@ -106,23 +88,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/nama">
-            <ImageView
-                android:id="@+id/icon_no_telp"
-                android:layout_width="47dp"
-                android:layout_height="47dp"
-                android:padding="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/icon_telephone" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:layout_toEndOf="@+id/icon_no_telp"
                 android:hint="@string/no_telp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputNoTelp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_notelponblue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
