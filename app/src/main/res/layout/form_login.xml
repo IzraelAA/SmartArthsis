@@ -25,6 +25,7 @@
             android:id="@+id/inputNoTelp"
             android:layout_width="match_parent"
             android:drawablePadding="5dp"
+            android:textColor="@color/white"
             android:drawableStart="@drawable/ic_contact_phone_black_24dp"
             android:layout_height="wrap_content"/>
 
@@ -43,6 +44,7 @@
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true"
         app:hintTextColor="@color/white"
+
         android:hint="@string/password">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -51,6 +53,7 @@
             android:drawableStart="@drawable/ic_lock_black_24dp"
             android:drawableLeft="@drawable/ic_lock_black_24dp"
             android:drawablePadding="5dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
 

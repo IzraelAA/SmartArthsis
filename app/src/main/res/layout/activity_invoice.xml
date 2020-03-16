@@ -1,106 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main"
-    tools:context=".InvoiceActivity">
-    <ImageView
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="95dp"
-        android:id="@+id/logo"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:src="@drawable/icon_awesome_check"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
-    <TextView
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        android:layout_marginTop="37dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/transaksi_success"
-        android:id="@+id/transaksi_success"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="19sp"/>
-    <TextView
-        app:layout_constraintTop_toBottomOf="@+id/transaksi_success"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/message_pembelian"
-        android:id="@+id/message_pembelian"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="19sp"/>
-    <TextView
-        app:layout_constraintTop_toBottomOf="@+id/message_pembelian"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:id="@+id/jumlah_pembelian"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="31sp"/>
-    <TextView
-        app:layout_constraintTop_toBottomOf="@+id/message_pembelian"
-        android:layout_marginTop="78dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/message_open_keran"
-        android:id="@+id/message_open_keran"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="31sp" />
-    <TextView
-        app:layout_constraintTop_toBottomOf="@+id/message_open_keran"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:id="@+id/nomor_keran"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="31sp"/>
 
+    tools:context=".InvoiceActivity">
     <LinearLayout
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="38dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"    >
+        <androidx.appcompat.widget.Toolbar
+            android:elevation="6dp"
+            android:background="#FFF"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:layout_margin="10dp"
-            android:background="@color/btnLogin"
-            android:textColor="@color/white"
-            android:id="@+id/btnVerifikasi"
-            android:text="@string/back"/>
-        <Button
-            android:layout_width="0dp"
+            app:title="Smart Arthsesi"
+            app:subtitle="Silakan scan code di bawah"/>
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/qrcode"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:layout_margin="10dp"
-            android:background="@color/btnLogin"
-            android:textColor="@color/white"
-            android:id="@+id/btnClose"
-            android:text="@string/close"/>
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" />
+
+
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            android:layout_marginTop="37dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transaksi_success"
+            android:id="@+id/transaksi_success"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="19sp"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/transaksi_success"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_pembelian"
+            android:id="@+id/message_pembelian"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="19sp"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/message_pembelian"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/jumlah_pembelian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="31sp"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/message_pembelian"
+            android:layout_marginTop="78dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_open_keran"
+            android:id="@+id/message_open_keran"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="31sp" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/message_open_keran"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/nomor_keran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="31sp"/>
+
+        <LinearLayout
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_margin="10dp"
+                android:background="@color/btnLogin"
+                android:textColor="@color/white"
+                android:id="@+id/btnVerifikasi"
+                android:text="@string/back"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_margin="10dp"
+                android:background="@color/btnLogin"
+                android:textColor="@color/white"
+                android:id="@+id/btnClose"
+                android:text="@string/close"/>
+        </LinearLayout>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

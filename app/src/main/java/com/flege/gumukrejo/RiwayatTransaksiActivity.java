@@ -2,6 +2,8 @@ package com.flege.gumukrejo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,12 +23,9 @@ public class RiwayatTransaksiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riwayat_transaksi);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Riwayat Transaksi");
-
         lv_history = findViewById(R.id.lv_history);
-
         list_riwayat_transaksi.add(new RiwayatTransaksi("Pembelian Saldo Air Sebesar Rp20.000","OnProgress","26-02-2020"));
         list_riwayat_transaksi.add(new RiwayatTransaksi("Pembelian Saldo Air Sebesar Rp15.000","Berhasil","23-02-2020"));
         list_riwayat_transaksi.add(new RiwayatTransaksi("Pembelian Saldo Air Sebesar Rp25.000","Berhasil","20-02-2020"));

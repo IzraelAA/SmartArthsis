@@ -5,11 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.flege.gumukrejo.main.AkunFragment">
-
+<LinearLayout
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2655FF"
+    app:title="Profil"
+    app:titleTextColor="@color/white"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <RelativeLayout
+            android:layout_marginTop="20dp"
             android:id="@+id/user_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -161,5 +173,6 @@
             android:textSize="23sp"
             android:text="@string/logout" />
     </RelativeLayout>
+</LinearLayout>
 
 </ScrollView>
