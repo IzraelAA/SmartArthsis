@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.widget.TextView;
 
 import com.flege.gumukrejo.R;
+import com.flege.gumukrejo.authentication.LoginActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, SplashVideo.class);
+                Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

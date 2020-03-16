@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.flege.gumukrejo.main.AkunFragment">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RelativeLayout
@@ -160,6 +161,6 @@
             android:layout_marginEnd="35dp"
             android:textSize="23sp"
             android:text="@string/logout" />
-    </RelativeLayout>
+    </LinearLayout>
 
 </ScrollView>
